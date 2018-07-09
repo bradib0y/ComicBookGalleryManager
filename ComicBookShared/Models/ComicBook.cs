@@ -27,6 +27,8 @@ namespace ComicBookShared.Models
         public DateTime PublishedOn { get; set; }
         [Display(Name = "Average Rating")]
         public decimal? AverageRating { get; set; }
+        [Timestamp]
+        public byte[] RowVersion { get; set; }
 
         public Series Series { get; set; }
         public ICollection<ComicBookArtist> Artists { get; set; }
@@ -69,5 +71,7 @@ namespace ComicBookShared.Models
                 RoleId = roleId
             });
         }
+
+
     }
 }

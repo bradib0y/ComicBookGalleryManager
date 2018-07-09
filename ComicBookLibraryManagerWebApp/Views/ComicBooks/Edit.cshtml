@@ -20,7 +20,7 @@
                 <button type="submit" class="btn btn-success btn-lg margin-right">
                     <span class="glyphicon glyphicon-save"></span> Save
                 </button>
-                <a href="@Url.Action("Detail", new { id = Model.Id })" class="btn btn-warning btn-lg">
+                <a href="@(Model.ComicBookHasBeenDeleted ? Url.Action("Index") : Url.Action("Detail", new { id = Model.Id }))" class="btn btn-warning btn-lg">
                     <span class="glyphicon glyphicon-remove"></span> Cancel
                 </a>
             </div>

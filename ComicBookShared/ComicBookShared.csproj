@@ -39,6 +39,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,6 +55,7 @@
     <Compile Include="Data\Commands\AddComicBookArtistCommand.cs" />
     <Compile Include="Data\Context.cs" />
     <Compile Include="Data\DatabaseInitializer.cs" />
+    <Compile Include="Data\EntityCache.cs" />
     <Compile Include="Data\Queries\GetComicBookQuery.cs" />
     <Compile Include="Data\Repository.cs" />
     <Compile Include="Data\SeriesRepository.cs" />
